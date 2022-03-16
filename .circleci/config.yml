@@ -8,10 +8,11 @@ jobs:
     steps:
       - aws-cli/setup:
           profile-name: airflow
+      - checkout
       - run:
           name: s3 listing
           command: |
-            aws s3 ls --profile airflow
+            aws s3 sync . s3://airflow-artefacts-bucket  --profile airflow
   build:
     working_directory: ~/airflow-dags-ci
     docker:
