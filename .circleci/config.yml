@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: echo "A first build"
-      - run: mkdir -m my_workspace
+      - run: mkdir -p my_workspace
       - run: echo $ACCESS
   
   test:
