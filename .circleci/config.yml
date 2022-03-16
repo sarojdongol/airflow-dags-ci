@@ -7,4 +7,19 @@ jobs:
       - image: circleci/python:3.7
     steps:
       - checkout
+      - run: echo "A first build"
+  
+  test:
+    working_directory: ~/airflow-dags-ci
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
       - run: echo "A first test"
+
+workflows:
+  version: 2
+  buld_and_test:
+    jobs:
+      - build
+      - test
