@@ -1,5 +1,7 @@
 # .circleci/config.yml
 version: 2
+orbs:
+  aws-cli: circleci/aws-cli@2.0.6
 jobs:
   aws-cli-cred-setup:
     executor: aws-cli/default
@@ -29,7 +31,13 @@ workflows:
   version: 2
   buld_and_test:
     jobs:
-      - build
+      - aws-cli-cred-setup:
+          context: aws
+      - build:
+          requires:
+            - aws-cli-cred-setup
       - test:
           requires:
+            - aws-cli-cred-setup
             - build
+
