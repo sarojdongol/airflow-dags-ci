@@ -30,7 +30,8 @@ workflows:
   version: 2
   buld_and_test:
     jobs:
-      - aws-cli-cred-setup
+      - aws-cli-cred-setup:
+            context: aws
       - build:
           requires:
             - aws-cli-cred-setup
