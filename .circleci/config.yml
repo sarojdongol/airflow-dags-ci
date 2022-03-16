@@ -7,20 +7,4 @@ jobs:
       - image: circleci/python:3.7
     steps:
       - checkout
-      - run: python3 main.py
-
-  tests:
-    working_directory: ~/project
-    docker:
-      - image: circleci/python:3.7
-    steps:
-      - checkout
-      - run: python3 main-test.py
-
-workflows:
-  build_and_test:
-    jobs:
-      - build
-      - tests:
-          requires:
-            - build
+      - run: echo "A first test"
