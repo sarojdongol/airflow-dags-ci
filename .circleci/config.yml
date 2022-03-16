@@ -11,7 +11,7 @@ jobs:
       - run:
           name: s3 listing
           command: |
-            aws s3 ls
+            aws s3 ls --profile airflow
   build:
     working_directory: ~/airflow-dags-ci
     docker:
