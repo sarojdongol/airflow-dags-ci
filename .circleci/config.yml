@@ -1,7 +1,7 @@
 # .circleci/config.yml
-version: 2
+version: 2.1
 orbs:
-  aws-cli: circleci/aws-cli@2.0.6
+  aws-cli: circleci/aws-cli@2.1.0
 jobs:
   aws-cli-cred-setup:
     executor: aws-cli/default
