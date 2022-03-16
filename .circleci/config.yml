@@ -7,10 +7,8 @@ jobs:
     executor: aws-cli/default
     steps:
       - aws-cli/setup:
-          aws-access-key-id: AWS_ACCESS_KEY
-          aws-secret-access-key: AWS_ACCESS_SECRET
-          aws-region: AWS_REGION_NAME
-      - run: echo "aws s3 ls"
+          profile-name: airflow
+      - run: aws s3 ls --profile airflow
   build:
     working_directory: ~/airflow-dags-ci
     docker:
@@ -32,8 +30,7 @@ workflows:
   version: 2
   buld_and_test:
     jobs:
-      - aws-cli-cred-setup:
-            context: aws
+      - aws-cli-cred-setup
       - build:
           requires:
             - aws-cli-cred-setup
