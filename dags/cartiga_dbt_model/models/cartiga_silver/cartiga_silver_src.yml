@@ -1,0 +1,10 @@
+version: 2
+
+
+sources:
+  - name: cartiga_bronze
+    schema: momentumfunding123nsf0916
+    tables:
+      - name: contact
+      - name: record_type
+      - name: account

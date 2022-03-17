@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: attorney
+    columns:
+      - name: record_type_id
+        tests: 
+          - not_null
+
+  - name: law_firm_personnel
+    columns:
+      - name: record_type_id
+        tests: 
+          - not_null
+
