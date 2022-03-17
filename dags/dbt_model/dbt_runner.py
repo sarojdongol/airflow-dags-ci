@@ -21,6 +21,10 @@ default_args = {
     'email_on_failure': True
 }
 
+
+os.environ["GIT_PYTHON_REFRESH"] = "quiet"
+
+
 def IsWorkspaceAvailable(workspace_name):
     check_result = os.path.isdir(workspace_name)
     if check_result == True:
