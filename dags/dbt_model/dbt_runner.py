@@ -18,7 +18,7 @@ default_args = {
 
 
 with DAG(
-    dag_id="DBTrunner",
+    dag_id="DBT-runner",
     description="Databricks silver Builder",
     start_date=datetime(2022, 3, 17),
     schedule_interval="@daily",
