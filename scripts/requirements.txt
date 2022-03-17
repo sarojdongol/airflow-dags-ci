@@ -1,3 +1,0 @@
-boto3 >= 1.17.4
-airflow_dbt
-pytest>=3.0.7

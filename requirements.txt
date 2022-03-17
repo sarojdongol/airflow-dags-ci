@@ -1,0 +1,5 @@
+boto3 >= 1.17.4
+airflow_dbt
+pytest>=3.0.7
+dbt
+GitPython>=3.1.20
