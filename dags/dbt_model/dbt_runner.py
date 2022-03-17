@@ -28,9 +28,9 @@ with DAG(
     dbt_run = DbtRunOperator(
         task_id='dbt_run',
         dbt_bin='/usr/local/airflow/.local/bin/dbt',
-        profiles_dir='/usr/local/airflow/dags/dbt_model/cartiga_dbt_model/',
-        dir='/usr/local/airflow/dags/dbt_model/cartiga_dbt_model/'
+        profiles_dir='/usr/local/airflow/dags/cartiga_dbt_model/',
+        dir='/usr/local/airflow/dags/cartiga_dbt_model/'
     )
 
-    
+
 dbt_run
