@@ -31,3 +31,6 @@ with DAG(
         profiles_dir='/usr/local/airflow/dags/dbt_model/cartiga_dbt_model/',
         dir='/usr/local/airflow/dags/dbt_model/cartiga_dbt_model/'
     )
+
+    
+dbt_run
