@@ -22,6 +22,7 @@ snapshot-paths: ["snapshots"]
 #target-path: "target"  # directory which will store compiled SQL files
 target-path: /usr/local/airflow/tmp/target
 log-path: /usr/local/airflow/tmp/logs
+module-path: /usr/local/airflow/tmp/dbt_packages
 clean-targets:         # directories to be removed by `dbt clean`
   - "/usr/local/airflow/tmp/target"
   - "/usr/local/airflow/tmp/dbt_packages"
