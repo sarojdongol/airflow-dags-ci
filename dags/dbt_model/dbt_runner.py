@@ -32,5 +32,4 @@ with DAG(
         dir='/usr/local/airflow/dags/cartiga_dbt_model/'
     )
 
-
 dbt_run
