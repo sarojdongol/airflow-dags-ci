@@ -7,6 +7,4 @@ cartiga_dbt_model:
       threads: 1
       token: dapi316d47b8b5d9ef261345b1a94b29d63f
       type: databricks
-      target-path: /usr/local/airflow/tmp/target
-      log-path: /usr/local/airflow/tmp/logs
   target: dev
