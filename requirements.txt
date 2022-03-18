@@ -1,5 +1,5 @@
 boto3 >= 1.17.4
-airflow_dbt
+airflow-dbt
 pytest>=3.0.7
 dbt
 dbt-databricks>=1.0.1
