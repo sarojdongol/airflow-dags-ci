@@ -24,7 +24,7 @@ target-path: /usr/local/airflow/tmp/target
 log-path: /usr/local/airflow/tmp/logs
 clean-targets:         # directories to be removed by `dbt clean`
   - "/usr/local/airflow/tmp/target"
-  - "/usr/local/airflow/tmp/target/dbt_packages"
+  - "/usr/local/airflow/tmp/dbt_packages"
 
 
 # Configuring models
