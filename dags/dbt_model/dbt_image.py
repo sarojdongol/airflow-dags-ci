@@ -33,7 +33,9 @@ hello_world = ECSOperator(
     network_configuration={
         "awsvpcConfiguration": {
             "securityGroups": ["sg-05d7d142199ea6d7a"],
-            "subnets": ["subnet-095d01e7cf71a15e0", "subnet-07acea5008ff2050f"],
+            "subnets": ["subnet-095d01e7cf71a15e0"
+                        , "subnet-07acea5008ff2050f"],
+            "assignPublicIp": "ENABLED"
         },
     },
     tags={
